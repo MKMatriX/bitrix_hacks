@@ -1,0 +1,6 @@
+.success-text, .loading-text, .error-text {
+  display: none;
+}
+.is-success .success-text, .is-loading .loading-text, .is-error .error-text {
+  display: initial;
+}

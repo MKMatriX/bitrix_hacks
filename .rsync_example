@@ -1,0 +1,63 @@
+# sublime confs
+- *sftp-config*
+- *sublime-project*
+- *sublime-workspace*
+
+# Ingore
+P /public/*
+P /restore.php
+P /*.tar.gz
+P /*.tar.gz.*
+- /public/*
+- /restore.php
+- /*.tar.gz
+- /*.tar.gz.*
+
+P .git/
+- .git/
+# for pulling site before pushing
+P .rsync
+
+# obviously you have to replace mkmatrix with you company name
+R /bitrix/templates/main/
+R /bitrix/templates/main/***
+R /bitrix/components/mkmatrix/
+R /bitrix/components/mkmatrix/***
+
+P /upload/
+P /upload/**
+P /bitrix/**
+P /bitrix/php_interface/log.txt
+P /bitrix/php_interface/dbconn.php
+P /bitrix/components/bitrix/
+P /bitrix/templates/**
+
+- /upload/*
++ /upload/***.php
+
+# obviously you have to replace mkmatrix with you company name
++ /bitrix/
++ /bitrix/components/
++ /bitrix/components/mkmatrix/
++ /bitrix/components/mkmatrix/***
+- /bitrix/components/bitrix/
+
++ /bitrix/php_interface/
+- /bitrix/php_interface/log.txt
+- /bitrix/php_interface/dbconn.php
+
++ /bitrix/templates/
++ /bitrix/templates/main/***
+- /bitrix/templates/**
+
+- /bitrix/*
+
+P /log.txt
+P /log*.txt
+- /log.txt
+- /log*.txt
+
+P /sitemap*.xml
+P /robots.txt
+- /sitemap*.xml
+- /robots.txt
